@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔥 Método Home Work</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="main-content">
+    <div class="hero-section">
+      <div class="overlay">
+        <h1>🚀 Método Home Work</h1>
+        <p>Transforme seu celular em uma máquina de ganhos diários com apenas <strong>30 minutos por dia</strong>.</p>
+        <a href="#formulario" class="cta-btn">Quero Começar Agora</a>
+      </div>
+    </div>
+
+    <section class="features">
+      <h2>O que você vai aprender:</h2>
+      <div class="grid">
+        <div class="card">📱 Aplicativos que pagam no Pix</div>
+        <div class="card">💸 Estratégias testadas por mais de 1.200 pessoas</div>
+        <div class="card">⏱ Resultados em até 48h após aplicar</div>
+      </div>
+    </section>
+
+    <section class="depoimentos">
+      <h2>⚡ Depoimentos Reais</h2>
+      <div class="feedback">
+        <blockquote>“Comprei sem acreditar muito... hoje já fiz +R$380 em 4 dias!” <br> <span>– Lucas M.</span></blockquote>
+        <blockquote>“Apliquei o método em 1h e já caiu no Pix. Valeu cada centavo.” <br> <span>– Thais A.</span></blockquote>
+      </div>
+    </section>
+
+    <section class="formulario" id="formulario">
+      <h2>Acesso Imediato por R$4,99</h2>
+      <p>Preencha abaixo para liberar o pagamento:</p>
+      <form id="form">
+        <input type="text" id="nome" placeholder="Seu nome" required />
+        <input type="email" id="email" placeholder="Seu e-mail" required />
+        <select id="origem" required>
+          <option value="" disabled selected>Como nos conheceu?</option>
+          <option value="TikTok">TikTok</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Indicação">Indicação</option>
+          <option value="Outros">Outros</option>
+        </select>
+        <button type="submit" class="cta-btn">Gerar Pix</button>
+      </form>
+    </section>
+
+    <section id="pagamento" class="oculto pagamento">
+      <h2>Pagamento via Pix 🔒</h2>
+      <p>Escaneie ou copie a chave abaixo:</p>
+      <img src="qr.png" class="qr" alt="QR Code Pix" />
+      <div class="pix-code">
+        00020126580014BR.GOV.BCB.PIX013663398bca-f7e3-450b-8410-b41dbe8888dd52040000530398654044.995802BR5920EDIANE LIMA OLIVEIRA6006MANAUS62070503***630410C5
+      </div>
+      <button onclick="copiarPix()" class="cta-btn">📋 Copiar código Pix</button>
+      <button onclick="mostrarConteudo()" class="cta-btn">✅ Já paguei</button>
+    </section>
+
+    <section id="conteudo" class="oculto acesso">
+      <h2>✅ Conteúdo Liberado</h2>
+      <p>Você agora tem acesso ao <strong>Método Home Work</strong> completo:</p>
+      <ul>
+        <li>🎥 Vídeo explicativo</li>
+        <li>📋 PDF com links, estratégias e orientações</li>
+        <li>🤝 Acesso ao grupo de suporte e novidades</li>
+      </ul>
+      <p><strong>Bônus:</strong> Método de multiplicação com IA liberado!</p>
+    </section>
+
+    <footer>
+      <p>© 2025 Método Home Work. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <section id="verificando" class="oculto">
+    <h2>⏳ Verificando pagamento...</h2>
+    <p>Por favor, aguarde enquanto confirmamos seu pagamento. Se tudo estiver certo, você receberá o método no seu e-mail em breve.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
